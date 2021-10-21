@@ -15,7 +15,7 @@ publish = false
 # Workspace dependencies
 penumbra-proto = { path = "../proto" }
 # Penumbra dependencies
-tower-abci = { git = "https://github.com/penumbra-zone/tower-abci/" }
+tower-abci = { git = "https://github.com/penumbra-zone/tower-abci/", branch="tracing-pin" }
 tendermint-proto = { git = "https://github.com/penumbra-zone/tendermint-rs.git", branch = "abci-domain-types" }
 tendermint = { git = "https://github.com/penumbra-zone/tendermint-rs.git", branch = "abci-domain-types" }
 # External dependencies
