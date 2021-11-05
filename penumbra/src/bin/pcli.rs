@@ -102,7 +102,7 @@ async fn main() -> Result<()> {
         Command::FetchByNoteCommitment => {
             let spend_key = load_existing_keys(&wallet_path);
             let local_storage = state::ClientState::new(spend_key);
-            let mut client = WalletClient::connect("http://127.0.0.1:2323").await?;
+            let mut client = WalletClient::connect("http://127.0.0.1:3232").await?;
 
             let cm = vec![0, 0, 0u8];
             let request = tonic::Request::new(TransactionByNoteRequest { cm: cm.clone() });
